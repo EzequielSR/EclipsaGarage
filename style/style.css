@@ -94,9 +94,14 @@ section#img1{
 }
 
 section#sobre img{
-    display: flex;
-    width: 50%;
-    height: 50%;
+    display: block;
+    float: right;
+    margin-left: auto;
+    margin-right: 20px;
+    
+    max-width: 50%;
+    height: auto;
+    
 
 }
 iframe{

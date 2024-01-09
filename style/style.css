@@ -4,18 +4,26 @@
     box-sizing: border-box;
 }
 :root{
-    --cor4:white;
+    --cor5:#1B262C;
     --cor1:#4f4e4e;
     --cor2:#3D3D3D;
     --cor3:#E6E6E6;
+    --cor4:white;
 }
 
 body{
     font-family: 'Open Sans', sans-serif;
     background-color: white;
+    
 }
 header{
-    background-color:var(--cor2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    background-color:var(--cor5);
     text-align: left;
     padding-top: 10px;
     padding-bottom: 30px;
@@ -26,41 +34,77 @@ header > h1{
     margin-left: 15px;
 }
 nav{
-    position: absolute;
-    
-    left: 60%;
-    top: 3%;
-    transform: translate(50% );
-    margin-bottom: 20px;
+    float: right;
     padding: 10px;
 }
 nav > a {
-    color: var(--cor3);
-    font-weight: bold;
-    text-decoration: none;
-    
-}
-nav > a:hover{
-    color: var(--cor4) ;
-}
-section{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 30px;
-    font-size: 2.5vw;
-}
+    display: inline-block;
+            padding: 10px;
+            text-decoration: none;
+            color: var(--cor3);
+            font-weight: bold;
+            
+            
+        }
+        nav > a:hover{
+            color: var(--cor4) ;
+            text-decoration: underline;
+        }
+
 section > h1, h2{
     text-align: center;
 }
-section .imagem{
+section.imagem{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+    flex-direction: column;
+    
+
+
+
     background-color: rgb(45, 45, 45);
     background-size: cover;
     color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.395);
     background-attachment: fixed;
+    z-index: 1;
 }
-section #img1{
+section.imagem > h1{
+    font-size: 3em;
+    padding:5px;
+    text-shadow: 1px 1px 0px black;
+   
+}
+section.imagem > h2{
+    font-size: 2em;
+    text-shadow: 1px 1px 0px black;
+}
+section#img1{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-image: url(../image/pexels-cottonbro-studio-4489794.jpg);
-    background-position: center center;
+    background-size: cover;
+    background-position: center ;
+    overflow: hidden;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.395);
+}
+
+section#sobre img{
+    display: flex;
+    width: 50%;
+    height: 50%;
+
+}
+iframe{
+    min-width: 100%;
+    height: 450px;
+}
+footer{
+    background-color: var(--cor5);
+    padding-top: 40px;
+    padding-bottom: 100px;
 }

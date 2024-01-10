@@ -109,7 +109,36 @@ iframe{
     height: 450px;
 }
 footer{
+    color: var(--cor3);
+    font-weight: normal;
     background-color: var(--cor5);
     padding-top: 40px;
     padding-bottom: 100px;
+    overflow: hidden;
 }
+footer div.footer{
+     margin: 0px 117px;
+    padding: 0px 15px;
+    overflow: hidden;
+    float: left;
+}
+footer a{
+    color: var(--cor1);
+    text-decoration: none;
+}
+footer div.navegationfooter{
+    padding: 0px 15px;
+    position: 0px;
+}
+footer ul.pagesnaveg{
+    margin-bottom: 15px;
+}
+footer ul>li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px;
+    margin: 0px 8px;
+    min-width: 50px;
+
+}
+

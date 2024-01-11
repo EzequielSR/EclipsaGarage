@@ -128,7 +128,8 @@ footer a{
 }
 footer div.navegationfooter{
     padding: 0px 15px;
-    position: 0px;
+    overflow: hidden;
+    float: right;
 }
 footer ul.pagesnaveg{
     margin-bottom: 15px;
@@ -136,9 +137,13 @@ footer ul.pagesnaveg{
 footer ul>li{
     display: inline-block;
     list-style: none;
-    padding: 0px;
-    margin: 0px 8px;
     min-width: 50px;
 
+}
+footer ul>li>a{
+    margin: 0px 8px;
+}
+footer ul>li>a>span{
+    color: var(--cor3);
 }
 

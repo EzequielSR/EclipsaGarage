@@ -27,6 +27,11 @@ header{
     text-align: left;
     padding-top: 10px;
     padding-bottom: 30px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
+    padding: 10px;
 }
 header > h1{
     color: var(--cor3);
@@ -51,14 +56,11 @@ nav > a {
             text-decoration: underline;
         }
 
-section > h1, h2{
-    text-align: center;
-}
+
 section.imagem{
     display: flex;
     justify-content: center;
     text-align: center;
-    z-index: 1;
     flex-direction: column;
     
 
@@ -83,27 +85,51 @@ section.imagem > h2{
 section#img1{
     position: relative;
     width: 100%;
-    height: 40vh;
+    height: 60vh;
     padding-top: 20px;
     padding-bottom: 20px;
     background-image: url(../image/pexels-cottonbro-studio-4489794.jpg);
     background-size: cover;
-    background-position: center ;
+    background-position: center center;
     overflow: hidden;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.395);
 }
+section#sobre{
+    background-color: green;
+    border: 2px solid black;
+    height: 500px;
+    padding: 100px 0px;
+}
 
-section#sobre img{
-    display: block;
-    float: right;
-    margin-left: auto;
-    margin-right: 20px;
-    
-    max-width: 50%;
-    height: auto;
-    
+section div.container-sobre{
+    border: 1px solid black;
+    margin: 0px 27px;
+    padding: 0px 15px;
+}
+section div.container-side{
+    border: 1px solid black;
+    display: grid;
+    text-align: left;
+    grid-template-columns: 47% 47%;
+    grid-gap: 48px;
+}
+section div.container-side h2{
+    border: 1px solid black;
+    font-size: 48px;
+    margin: 0px 0px 10px;
+}
+section div.linehover{
+    border: 1px solid black;
 
 }
+section div.
+
+section div.container-side  p{
+    border: 1px solid black;
+    font-size: 19.2px;
+}
+
+
 iframe{
     min-width: 100%;
     height: 450px;

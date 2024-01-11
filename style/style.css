@@ -114,15 +114,10 @@ section div.container-side{
     grid-gap: 48px;
 }
 section div.container-side h2{
-    border: 1px solid black;
+    border-bottom: 2px solid black;
     font-size: 48px;
     margin: 0px 0px 10px;
 }
-section div.linehover{
-    border: 1px solid black;
-
-}
-section div.
 
 section div.container-side  p{
     border: 1px solid black;

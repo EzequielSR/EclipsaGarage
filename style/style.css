@@ -9,19 +9,20 @@
     --cor2:#3D3D3D;
     --cor3:#E6E6E6;
     --cor4:white;
+    --cordefundo:#F9F9F9;
 }
 
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: white;
+    background-color: var(--cor4);
     
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--cor2);
+    color: var(--cor4);
     padding: 10px;
     background-color:var(--cor5);
     text-align: left;
@@ -66,9 +67,9 @@ section.imagem{
 
 
 
-    background-color: rgb(45, 45, 45);
+    background-color: var(--cor1);
     background-size: cover;
-    color: white;
+    color: var(--cor4);
     background-attachment: fixed;
     z-index: 1;
 }
@@ -95,7 +96,7 @@ section#img1{
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.395);
 }
 section#sobre {
-    background-color: #F9F9F9;
+    background-color: var(--cordefundo);
     min-height: 500px;
     padding: 50px 0; 
     box-sizing: border-box; 
@@ -140,18 +141,102 @@ section div.imagem {
     margin-left: 50px;
     margin-top: 20px; 
 }
-
 img {
     max-width: 500px; 
     height: 500px; 
+    box-shadow: -7px 8px 25px -12px rgba(0,0,0,0.45);
+    -webkit-box-shadow: -7px 8px 25px -12px rgba(0,0,0,0.45);
+    -moz-box-shadow: -7px 8px 25px -12px rgba(0,0,0,0.45); ;
 }
 
-
-iframe{
-    min-width: 100%;
-    height: 450px;
+#servicos {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
 }
-footer{
+
+.conteudoservicos {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.titulo2 {
+    position: relative;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+.titulo2::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: #333;
+    bottom: -19px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.servico1,
+.servico2,
+.servico3 {
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.servico1 img,
+.servico2 img,
+.servico3 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.servico1 p,
+.servico2 p,
+.servico3 p {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+/* Media query para telas pequenas */
+@media screen and (max-width: 768px) {
+    .servico1,
+    .servico2,
+    .servico3 {
+        display: block;
+    }
+
+    .servico1,
+    .servico2,
+    .servico3 img {
+        margin-bottom: 10px;
+    }
+}
+
+/* Media query para telas grandes */
+
+/* Estilos para telas grandes */
+@media screen and (min-width: 769px) {
+    .servico1,
+    .servico2,
+    .servico3 {
+        display: inline-block;
+        width: 30%; /* Ajuste a largura conforme necessário */
+        margin-right: 20px;
+        text-align: left;
+        vertical-align: top;
+
+    }}
+    iframe{
+        min-width: 100%;
+        height: 450px;
+    }
+footer {
     color: var(--cor3);
     font-weight: normal;
     background-color: var(--cor5);
@@ -159,34 +244,83 @@ footer{
     padding-bottom: 100px;
     overflow: hidden;
 }
-footer div.footer{
-     margin: 0px 117px;
-    padding: 0px 15px;
+
+footer div.footer {
+    margin: 0 15px;
+    padding: 0 15px;
     overflow: hidden;
     float: left;
 }
-footer a{
+
+footer a {
     color: var(--cor1);
     text-decoration: none;
 }
-footer div.navegationfooter{
-    padding: 0px 15px;
+
+footer div.navegationfooter {
+    padding: 0 15px;
     overflow: hidden;
     float: right;
 }
-footer ul.pagesnaveg{
+
+footer ul.pagesnaveg {
     margin-bottom: 15px;
+    padding: 0;
+    list-style: none;
 }
-footer ul>li{
+
+footer ul>li {
     display: inline-block;
     list-style: none;
     min-width: 50px;
+}
 
+footer ul>li>a {
+    margin: 0 8px;
 }
-footer ul>li>a{
-    margin: 0px 8px;
-}
-footer ul>li>a>span{
+
+footer ul>li>a>span {
     color: var(--cor3);
 }
 
+/* Para telas menores */
+@media screen and (max-width: 768px) {
+    footer ul.pagesnaveg {
+        text-align: center;
+    }
+
+    footer ul>li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    footer ul>li>a {
+        display: block;
+        margin-right: 0;
+    }
+}
+
+
+footer ul>li>a {
+    display: inline-block; 
+    margin-right: 8px;
+}
+
+footer ul>li>a>span {
+    color: var(--cor3);
+}
+@media screen and (max-width: 768px) {
+    footer ul.pagesnaveg {
+        text-align: center;
+    }
+
+    footer ul>li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    footer ul>li>a {
+        display: block;
+        margin-right: 0;
+    }
+}

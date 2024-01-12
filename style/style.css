@@ -94,34 +94,56 @@ section#img1{
     overflow: hidden;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.395);
 }
-section#sobre{
-    background-color: green;
-    border: 2px solid black;
-    height: 500px;
-    padding: 100px 0px;
+section#sobre {
+    background-color: #F9F9F9;
+    min-height: 500px;
+    padding: 50px 0; 
+    box-sizing: border-box; 
 }
 
-section div.container-sobre{
-    border: 1px solid black;
-    margin: 0px 27px;
-    padding: 0px 15px;
-}
-section div.container-side{
-    border: 1px solid black;
-    display: grid;
-    text-align: left;
-    grid-template-columns: 47% 47%;
-    grid-gap: 48px;
-}
-section div.container-side h2{
-    border-bottom: 2px solid black;
-    font-size: 48px;
-    margin: 0px 0px 10px;
+section div.container-sobre {
+    margin: 0 27px;
+    padding: 20px 15px; 
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
 }
 
-section div.container-side  p{
-    border: 1px solid black;
-    font-size: 19.2px;
+section div.container-texto-a-esquerda {
+    text-align: justify;
+    
+    padding: 50px 20px;
+}
+
+section div.container-texto-a-esquerda h2 {
+    font-size: 2.5em; 
+    margin: 0 0 10px;
+    position: relative;
+}
+
+section div.container-texto-a-esquerda h2::before {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid var(--cor5);
+    width: 50px; 
+    left: 0;
+    bottom: 0;
+}
+
+section div.container-texto-a-esquerda p {
+    font-size: 1.2em;
+    max-width: 500px; 
+}
+
+section div.imagem {
+    margin-left: 50px;
+    margin-top: 20px; 
+}
+
+img {
+    max-width: 500px; 
+    height: 500px; 
 }
 
 

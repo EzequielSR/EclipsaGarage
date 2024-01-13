@@ -51,7 +51,7 @@ nav {
 }
 .nav-list a {
     text-decoration: none;
-    color: white;
+    color: var(--cor4);
     font-weight: bold;
 }
 .nav-list a:hover{
@@ -65,7 +65,7 @@ nav {
 .menu-toggle span {
     height: 5px;
     width: 50px;
-    background-color: white;
+    background-color: var(--cor4);
     margin: 5px 10px;
     display: block;
 }

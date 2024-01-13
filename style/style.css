@@ -22,7 +22,6 @@ header {
     align-items: center;
     background-color: var(--cor2);
     color: var(--cor4);
-    padding: 10px;
     background-color: var(--cor5);
     text-align: left;
     padding-top: 10px;
@@ -31,28 +30,81 @@ header {
     width: 100%;
     top: 0px;
     z-index: 1000;
-    padding: 10px;
 }
-header > h1 {
+header > div.logo {
     color: var(--cor3);
+    font-size: 30px;
     margin-top: 10px;
     margin-left: 15px;
 }
 nav {
-    float: right;
-    padding: 10px;
+    display: flex;
+    align-items: center;
 }
-nav > a {
-    display: inline-block;
-    padding: 10px;
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    margin: 0 15px;
+}
+.nav-list a {
     text-decoration: none;
-    color: var(--cor3);
+    color: white;
     font-weight: bold;
 }
-nav > a:hover {
-    color: var(--cor4);
+.nav-list a:hover{
     text-decoration: underline;
 }
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.menu-toggle span {
+    height: 5px;
+    width: 50px;
+    background-color: white;
+    margin: 5px 10px;
+    display: block;
+}
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: var(--cor5);
+        text-align: center;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+}
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(-50deg) translate(-5px, 6px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(50deg) translate(-12px, -14px);
+}
+
 
 section.imagem {
     display: flex;
@@ -90,7 +142,7 @@ section#img1 {
 section#sobre {
     background-color: var(--cordefundo);
     min-height: 500px;
-    padding: 50px 0;
+    padding: 100px 0;
     box-sizing: border-box;
 }
 
@@ -143,8 +195,9 @@ img {
 
 #servicos {
     text-align: center;
-    padding: 50px 0;
-    background-color: #f9f9f9;
+    padding: 100px 0px;
+    background-color: var(--cor5);
+    color: var(--cor4);
 }
 
 .conteudoservicos {
@@ -163,7 +216,7 @@ img {
     position: absolute;
     width: 50px;
     height: 2px;
-    background-color: #333;
+    background-color: var(--cor1);
     bottom: -19px;
     left: 50%;
     transform: translateX(-50%);
@@ -221,14 +274,11 @@ img {
         vertical-align: top;
     }
 }
-iframe {
-    min-width: 100%;
-    height: 450px;
-}
 #contato {
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: var(--cor3);
     padding: 50px 0;
+    color: var(--cor5);
 }
 
 .titulo3 {
@@ -242,7 +292,7 @@ iframe {
     position: absolute;
     width: 50px;
     height: 2px;
-    background-color: #333;
+    background-color: var(--cor2);
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -250,39 +300,34 @@ iframe {
 
 #contato p {
     font-size: 1.2em;
-    text-align: left;
+    text-align: center;
 }
 
 #contato form {
-    background-color: var(--cor3);
+    background-color: var(--cor5);
     padding: 20px;
     border-radius: 5px;
-    margin-top: 20px;
-    display: inline-block;
+    margin:20px auto;
     width: 100%;
+    max-width: 50%;
+    
 }
 
 #contato form input[type="text"],
-#contato form input[type="number"] {
-    width: calc(50% - 12px);
-    padding: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    display: inline-block;
-}
+#contato form input[type="number"],
 #contato form input[type="email"],
 #contato form textarea {
-    width: calc(100% - 16px);
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     box-sizing: border-box;
-    display: inline-block;
+    display: block;
 }
 
 #contato form input[type="button"] {
     width: 100%;
-    background-color: #fff;
-    color: var(--cor2);
+    background-color: var(--cor3);
+    color: var(--cor5);
     cursor: pointer;
     border: none;
     padding: 10px 20px;
@@ -291,17 +336,17 @@ iframe {
     margin-top: 10px;
 }
 
-@media screen and (max-width: 768px) {
-    #contato form input[type="text"],
-    #contato form input[type="number"],
-    #contato form input[type="email"],
-    #contato p {
-        text-align: center;
+@media screen and (min-width: 768px) {
+    #contato form {
+        width: 50%;
+        float: center;
     }
-    #contato form textarea {
-        width: 100%;
-        margin-right: 0;
-    }
+}
+
+
+iframe {
+    min-width: 100%;
+    height: 450px;
 }
 
 footer {

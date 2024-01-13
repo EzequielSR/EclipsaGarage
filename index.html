@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="icon/car-outline.svg" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reicondicionados</title>
@@ -13,12 +14,19 @@
 
 <body>
     <header>
-        <h1>Reicondicionados</h1>
-
+        <div class="logo">Reicondicionados</div>
         <nav>
-            <a href="#">Início</a>
-            <a href="#">Shop</a>
-            <a href="#">Contato</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-list">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
 
         </nav>
     </header>
@@ -70,7 +78,7 @@
                 <a href="tel:985-245-1739">985-245-1730</a>
             </p>
             <form>
-                <input type="text" name="nome" id="nome" placeholder="Nome">
+                <input type="text" name="nome" id="nome" placeholder="Nome completo">
 
                 <input type="number" name="number" id="number" placeholder="Telefone">
 
@@ -101,6 +109,7 @@
             </ul>
         </div>
     </footer>
+    <script src="Javascript/script.js"></script>
 
 
 </body>

@@ -310,7 +310,7 @@ img {
     border-radius: 5px;
     margin:20px auto;
     width: 100%;
-    max-width: 50%;
+    max-width: 100%;
     
 }
 
@@ -339,7 +339,7 @@ img {
 
 @media screen and (min-width: 768px) {
     #contato form {
-        width: 50%;
+        max-width: 50%;
         float: center;
     }
 }

@@ -20,7 +20,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Animação de escala para imagens */
 @keyframes scaleIn {
     from {
         transform: scale(0.8);
@@ -30,12 +29,10 @@ html {
     }
 }
 
-/* Aplicar a animação de escala às imagens */
 img {
     animation: scaleIn 1s ease-in-out;
 }
 
-/* Sua animação fadeIn para outros elementos */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -69,7 +66,9 @@ img {
     transform: translateY(0);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -87,7 +86,6 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    
 }
 
 header > div.logo {
@@ -100,12 +98,12 @@ nav {
     display: flex;
     align-items: center;
 }
-.nav-list{
+.nav-list {
     list-style: none;
     display: flex;
 }
 
-.nav-list li{
+.nav-list li {
     margin: 0 15px;
 }
 .nav-list a {
@@ -113,7 +111,7 @@ nav {
     color: var(--cor4);
     font-weight: bold;
 }
-.nav-list a:hover{
+.nav-list a:hover {
     text-decoration: underline;
 }
 .menu-toggle {
@@ -164,7 +162,6 @@ nav {
 .menu-toggle.active span:nth-child(3) {
     transform: rotate(50deg) translate(-15px, -14px);
 }
-
 
 section.imagem {
     display: flex;
@@ -367,10 +364,9 @@ img {
     background-color: var(--cor5);
     padding: 20px;
     border-radius: 5px;
-    margin:20px auto;
+    margin: 20px auto;
     width: 100%;
     max-width: 100%;
-    
 }
 
 #contato form input[type="text"],
@@ -402,7 +398,6 @@ img {
         float: center;
     }
 }
-
 
 iframe {
     min-width: 100%;

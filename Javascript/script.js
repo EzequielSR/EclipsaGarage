@@ -1,31 +1,33 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const mobileMenuToggle = document.getElementById('mobile-menu');
-    const navList = document.querySelector('.nav-list');
+document.addEventListener("DOMContentLoaded", function () {
+    const mobileMenuToggle = document.getElementById("mobile-menu");
+    const navList = document.querySelector(".nav-list");
 
-    mobileMenuToggle.addEventListener('click', function () {
-        navList.classList.toggle('show');
-        mobileMenuToggle.classList.toggle('active');
+    mobileMenuToggle.addEventListener("click", function () {
+        navList.classList.toggle("show");
+        mobileMenuToggle.classList.toggle("active");
     });
-    document.addEventListener('DOMContentLoaded', function () {
-        window.addEventListener('scroll', function () {
-    const elementsToAnimate = document.querySelectorAll('.animate-scroll');
+    document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("scroll", function () {
+            const elementsToAnimate =
+                document.querySelectorAll(".animate-scroll");
 
-    function checkElementsVisibility() {
-        elementsToAnimate.forEach((element) => {
-            const elementTop = element.getBoundingClientRect().top;
-            const windowHeight = window.innerHeight;
+            function checkElementsVisibility() {
+                elementsToAnimate.forEach((element) => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
 
-            if (elementTop < windowHeight * 0.75 && !element.classList.contains('animated')) {
-                element.classList.add('animated');
+                    if (
+                        elementTop < windowHeight * 0.75 &&
+                        !element.classList.contains("animated")
+                    ) {
+                        element.classList.add("animated");
+                    }
+                });
             }
+
+            window.addEventListener("scroll", checkElementsVisibility);
+
+            checkElementsVisibility();
         });
-    }
-
-    // Execute a função quando o usuário rolar a página
-    window.addEventListener('scroll', checkElementsVisibility);
-
-    // Execute a função uma vez para animar os elementos visíveis inicialmente
-    checkElementsVisibility();
-});
-});
+    });
 });

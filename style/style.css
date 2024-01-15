@@ -358,38 +358,7 @@ img {
 #contato p {
     font-size: 1.2em;
     text-align: center;
-}
-
-#contato form {
-    background-color: var(--cor5);
-    padding: 20px;
-    border-radius: 5px;
-    margin: 20px auto;
-    width: 100%;
-    max-width: 100%;
-}
-
-#contato form input[type="text"],
-#contato form input[type="tel"],
-#contato form input[type="email"],
-#contato form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    display: block;
-}
-
-#contato form input[type="submit"] {
-    width: 100%;
-    background-color: var(--cor3);
-    color: var(--cor5);
-    cursor: pointer;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    display: block;
-    margin-top: 10px;
+    padding-bottom: 2em;
 }
 
 @media screen and (min-width: 768px) {
@@ -401,7 +370,7 @@ img {
 
 iframe {
     min-width: 100%;
-    height: 450px;
+    height: 100vh;
 }
 
 footer {

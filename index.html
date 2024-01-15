@@ -78,16 +78,17 @@
             <p>Biguacu, Santa Catarina, Brazil
                 <a href="tel:985-245-1739">985-245-1730</a>
             </p>
-            <form>
-                <input type="text" name="nome" id="nome" placeholder="Nome completo">
+            <form id="formulario" onsubmit="return validarFormulario()">
+                <input type="text" name="nome" id="nome" placeholder="Nome completo" autocomplete="name" required>
 
-                <input type="number" name="number" id="number" placeholder="Telefone">
+                <input type="tel" name="tel" id="tel" placeholder="Telefone" autocomplete="tel"  required>
 
-                <input type="email" name="email" id="email" placeholder="Endereço de e-mail">
+                <input type="email" name="email" id="email" autocomplete="email" placeholder="Endereço de e-mail" required>
 
-                <input type="text" name="text" id="text" placeholder="Mensagem">
+                <input type="text" name="text" id="text" placeholder="Mensagem" required>
 
-                <input type="button" value="FALE CONOSCO">
+                <input type="submit" value="Enviar">
+                
             </form>
         </div>
     </section>

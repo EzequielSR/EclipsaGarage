@@ -370,7 +370,7 @@ img {
 }
 
 #contato form input[type="text"],
-#contato form input[type="number"],
+#contato form input[type="tel"],
 #contato form input[type="email"],
 #contato form textarea {
     width: 100%;
@@ -380,7 +380,7 @@ img {
     display: block;
 }
 
-#contato form input[type="button"] {
+#contato form input[type="submit"] {
     width: 100%;
     background-color: var(--cor3);
     color: var(--cor5);

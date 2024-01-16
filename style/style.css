@@ -215,7 +215,7 @@ section div.container-sobre {
 section div.container-texto-a-esquerda {
     text-align: justify;
 
-    padding: 50px 20px;
+    padding: 50px 30px;
 }
 
 section div.container-texto-a-esquerda h2 {
@@ -241,6 +241,7 @@ section div.container-texto-a-esquerda p {
 section div.imagem {
     margin-left: 50px;
     margin-top: 20px;
+    margin: auto;
 }
 img {
     max-width: 500px;
@@ -359,6 +360,14 @@ img {
     font-size: 1.2em;
     text-align: center;
     padding-bottom: 2em;
+}
+#contato a{
+    color: var(--cor2);
+    text-decoration: none;
+}
+#contato a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
 }
 
 @media screen and (min-width: 768px) {

@@ -194,7 +194,7 @@ section#inicio {
     background-size: cover;
     background-position: center center;
     overflow: hidden;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.395);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.442);
 }
 section#sobre {
     background-color: var(--cordefundo);
@@ -401,7 +401,10 @@ footer a {
     color: var(--cor1);
     text-decoration: none;
 }
-
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+}
 footer div.navegationfooter {
     padding: 0 15px;
     overflow: hidden;

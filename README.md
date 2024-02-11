@@ -18,7 +18,7 @@
 <br>
 
 <p align="center">
-  <img alt="Projeto DevLinks" src="image/Captura de tela_11-2-2024_162825_127.0.0.1.jpeg" width="100%">
+  <img alt="Projeto EclipsaGarage" src="image/Captura de tela_11-2-2024_162825_127.0.0.1.jpeg" width="70%">
 </p>
 
 ## 🚀 Tecnologias

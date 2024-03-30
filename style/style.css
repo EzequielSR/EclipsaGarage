@@ -384,7 +384,9 @@ footer.footer-1 p {
 
  /*Dispositivos menores que 600px*/
 @media screen and (max-width:600px){
-   
+    section#sobre{
+        width: 100%;
+    }
  
     /*Seção Serviço*/
     .servico1,

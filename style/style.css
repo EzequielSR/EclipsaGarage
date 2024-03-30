@@ -34,57 +34,6 @@ body,html {
     background-color: var(--cor4);
     scroll-behavior: smooth;
 }
-@keyframes scaleIn {
-    from {
-        transform: scale(0.8);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-
-img {
-    animation: scaleIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.animate-initial {
-    animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeInScroll {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.animate-scroll {
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.animate-scroll.animated {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-h1,
-h2,
-h3 {
-    animation: fadeIn 1s ease-in-out;
-}
 /*Cabeçalho do site*/
 
 header {
@@ -120,38 +69,41 @@ nav.menu-desktop a:hover{
     text-decoration: underline;
 }
 
-.nav-list li {
+nav.nav-list li {
     margin: 0 15px;
 }
-.nav-list a {
+nav.nav-list a {
     text-decoration: none;
     color: var(--cor4);
     font-weight: ligher;
 }
-.nav-list a:hover {
+nav.nav-list a:hover {
     text-decoration: underline;
 }
 nav.menu-mobile {
     display: none;
     float: right;
   }
+  nav.menu-mobile h2{
+    cursor: pointer;
+  }
   nav.menu-mobile ul {
     display: none;
     width: 100%;
-    background-color: white;
+    background-color: var(--cor5);
     position: absolute;
     left: 0;
-    top: 50px;
+    top: 53px;
     z-index: 999;
     text-align: center;
   }
   nav.menu-mobile li {
     padding: 8px 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--cor1);
   }
   nav.menu-mobile a {
     display: block;
-    color: black;
+    color: var(--cor3);
     text-decoration: none;
   }
 
@@ -225,6 +177,7 @@ section div.container-text-image h2.titulo{
     font-size: 2.5em;
     margin: 0 0 10px;
     position: relative;
+    color: var(--cor5);
 }
 
 section div.container-text-image h2.titulo::before {
@@ -275,13 +228,14 @@ img {
 .titulo2::after {
     content: "";
     position: absolute;
-    width: 50px;
+    width: 60px;
     height: 2px;
     background-color: var(--cor1);
-    bottom: -19px;
+    bottom: 0px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-90%);
 }
+
 
 .servico1,
 .servico2,
@@ -423,7 +377,7 @@ footer.footer-1 p {
     color: var(--cor3);
   }
 
- 
+ /*Dispositivos menores que 600px*/
 @media screen and (max-width:600px){
    
  
@@ -442,41 +396,59 @@ footer.footer-1 p {
     }
 }
 @media screen and (max-width: 768px) {
+  .w33,.w44{
+    width: 100%;
+    margin-bottom: 20px;
+  }
     .menu-toggle {
         display: flex;
     }
-
-    .nav-list {
+    nav.menu-mobile{
+        display: block;
+    }
+    nav.menu-desktop{
         display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: var(--cor5);
-        text-align: center;
+    }
+    .servico1, .servico2, .servico3{
+        display: block;
+    }
+    .servico1, .servico2, .servico3 img{
+        margin-bottom: 10px ;
     }
 
-    .nav-list.show {
-        display: flex;
-    }
-
-    .nav-list li {
-        margin: 10px 0;
-    }
-
-.menu-toggle.active span:nth-child(1) {
-    transform: rotate(-50deg) translate(-5px, 6px);
-}
-
-.menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-toggle.active span:nth-child(3) {
-    transform: rotate(50deg) translate(-15px, -14px);
-}
+    
 footer.footer-1{
     text-align: center;
 }
+}
+@media screen and (min-width: 769px) {
+    .servico1,
+    .servico2,
+    .servico3 {
+        display: inline-block;
+        width: 30%;
+        margin-right: 20px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    #contato form {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
+/* Rodapé */
+footer.footer-1,
+footer.footer-2 {
+    text-align: center;
+}
+
+/* Menu Mobile */
+nav.menu-mobile {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    nav.menu-mobile {
+        display: block;
+    }
 }

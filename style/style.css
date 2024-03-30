@@ -197,9 +197,11 @@ section div.container-text-image h2.titulo::before {
 
 section div.container-text-image p {
     padding-top: 10px;
-    font-size: 1.2em;
     width: 500px;
+    text-align: justify;
+    font-size: 1.2em;
     font-weight: lighter;
+    line-height: 30px;
 }
 
 section div.imagem {

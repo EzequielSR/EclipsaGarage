@@ -47,6 +47,11 @@ header {
 .logo a{
     color:var(--cor3);
     text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.logo h2{
+    margin-left: 5px;
 }
 
 nav.menu-desktop{

@@ -125,6 +125,7 @@ section.imagem {
     background-size: cover;
     color: var(--cor4);
     background-attachment: fixed;
+    max-width: 100%;
 }
 section.imagem > .container {
     position: relative;
@@ -388,11 +389,7 @@ footer.footer-1 p {
     section#sobre, div.container-sobre {
         width: 100%;
     }
-    section div.container-sobre {
-        flex-direction: column;
-        align-items: stretch;
-        text-align: center;
-    }
+  
  
     /*Seção Serviço*/
     .servico1,

@@ -383,8 +383,8 @@ footer.footer-1 p {
     color: var(--cor3);
   }
 
- /*Dispositivos menores que 600px*/
-@media screen and (max-width:600px){
+ /*Dispositivos menores que 580px*/
+@media screen and (max-width:580px){
    
     section#sobre, div.container-sobre {
         width: 100%;

@@ -165,7 +165,8 @@ section#inicio {
 section#sobre {
     background-color: var(--cordefundo);
     max-height: auto;
-    padding: 100px 0;
+    
+    margin: 0 auto;
 }
 
 section div.container-sobre {
@@ -197,7 +198,8 @@ section div.container-text-image h2.titulo::before {
 
 section div.container-text-image p {
     padding-top: 10px;
-    width: 500px;
+    width: auto;
+    max-width: 500px;
     text-align: justify;
     font-size: 1.2em;
     font-weight: lighter;

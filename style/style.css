@@ -53,7 +53,7 @@ header {
 .logo h2{
     margin-left: 5px;
 }
-
+/*logo*/
 nav.menu-desktop{
     float: right;
 }
@@ -85,6 +85,7 @@ nav.nav-list a {
 nav.nav-list a:hover {
     text-decoration: underline;
 }
+/*navegação menu-desktop*/
 nav.menu-mobile {
     display: none;
     float: right;
@@ -111,9 +112,8 @@ nav.menu-mobile {
     color: var(--cor3);
     text-decoration: none;
   }
+/*navegação menu-mobile*/
 
-
-/*Banner do site*/
 section.imagem {
     display: flex;
     justify-content: center;
@@ -159,7 +159,8 @@ section#inicio {
     overflow: hidden;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.442);
 }
-/*Seção sobre*/
+/*Banner do site*/
+
 section#sobre {
     background-color: var(--cordefundo);
     max-height: auto;
@@ -167,7 +168,6 @@ section#sobre {
 }
 
 section div.container-sobre {
-    margin: 0 27px;
     padding: 20px 15px;
     display: flex;
     flex-wrap: wrap;
@@ -176,7 +176,7 @@ section div.container-sobre {
 }
 
 section div.container-text-image {
-    padding: 50px 30px;
+    padding: 50px 0;
 }
 section div.container-text-image h2.titulo{
     font-size: 2.5em;
@@ -197,8 +197,11 @@ section div.container-text-image h2.titulo::before {
 section div.container-text-image p {
     padding-top: 10px;
     font-size: 1.2em;
-    width: 500px;
+    width: auto;
+    max-width: 500px;
+    text-align: justify;
     font-weight: lighter;
+    line-height: 30px;
 }
 
 section div.imagem {
@@ -212,7 +215,7 @@ img {
     -webkit-box-shadow: -7px 8px 25px -12px rgba(0, 0, 0, 0.45);
     -moz-box-shadow: -7px 8px 25px -12px rgba(0, 0, 0, 0.45);
 }
-/*Seção serviços*/
+/*Seção sobre*/
 #servicos {
     text-align: center;
     padding: 100px 0px;
@@ -296,6 +299,7 @@ img {
         vertical-align: top;
     }
 }
+/*Seção serviços*/
 #contato {
     text-align: center;
     background-color: var(--cor3);
@@ -346,9 +350,7 @@ iframe {
     min-width: 100%;
     min-height: 460px;
 }
-nav.menu-mobile{
-    display: block;
-}
+/*Seção contato*/
 footer.footer-1{
     background-color: var(--cor5);
     color: var(--cor3);

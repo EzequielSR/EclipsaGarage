@@ -161,7 +161,7 @@ section#inicio {
     overflow: hidden;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.442);
 }
-/*Seção sobre*/
+/*Seção sobre */ 
 section#sobre {
     background-color: var(--cordefundo);
     max-height: auto;
